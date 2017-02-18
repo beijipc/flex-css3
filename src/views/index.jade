@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  h1 Hi flex!
+  
+  h3 flex-row
+  section.container.flex-row
+    - var boxs = ['red','blue','yellowgreen','skyblue','brown','crimson','indianred','blue'];
+    each val,index in boxs
+      div.box(style="background-color:#{val}")= index
+  
+  h3 flex-column
+  section.container.flex-column
+    - var boxs = ['red','blue','yellowgreen','skyblue','brown','crimson','indianred'];
+    each val,index in boxs
+      div.box(style="background-color:#{val}")= index
+  
+  h3 flex-row.main-center
+  section.container.flex-row.main-center
+    - var boxs = ['red','blue','yellowgreen','skyblue'];
+    each val,index in boxs
+      div.box(style="background-color:#{val}")= index
+
+  h3 flex-row.cross-center
+  section.container.flex-row.cross-center
+    - var boxs = ['red','blue','yellowgreen','skyblue'];
+    each val,index in boxs
+      div.box(style="background-color:#{val}")= index
+      
+  h3 flex-row.main-center.cross-center
+  section.container.flex-row.main-center.cross-center
+    - var boxs = ['red','blue'];
+    each val,index in boxs
+      div.box(style="background-color:#{val}")= index
+      
+  h3 flex-column.main-center.cross-center
+  section.container.flex-column.main-center.cross-center
+    - var boxs = ['red','blue'];
+    each val,index in boxs
+      div.box(style="background-color:#{val}")= index
+      
+  h3 flex-column
+  section.container.flex-column.main-between
+    div.box
+    
+  h3 flex-wrap
+  section.container.flex-row.flex-wrap
+    - var boxs = ['red','blue','yellowgreen','skyblue','brown','crimson','indianred'];
+    each val,index in boxs
+      div.box(style="background-color:#{val}")= index

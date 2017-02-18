@@ -1,0 +1,135 @@
+.container{
+  height: 100px;
+  background-color: gray;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.box{
+  height: 30px;
+  width: 20%;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+
+.flex-row,
+.flex-row-reverse,
+.flex-column,
+.flex-column-reverse,
+.flex-wrap{
+  display: flex;
+}
+
+// 主轴方向
+.flex-row{
+}
+.flex-row-reverse{
+  flex-direction: row-reverse;
+}
+.flex-column{
+  flex-direction: column;
+}
+.flex-column-reverse{
+  flex-direction: column-reverse;
+}
+
+// 子元素换行
+.flex-wrap-no{
+  flex-wrap: nowrap;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
+
+// 主轴对齐
+.main-start{
+  justify-content: flex-start;
+}
+.main-center{
+  justify-content: center;
+}
+.main-end{
+  justify-content: flex-end;
+}
+.main-around{
+  justify-content: space-around;
+}
+.main-between{
+  justify-content: space-between;
+}
+
+// 交叉轴对齐
+.cross-stretch{
+  align-items: stretch;
+}
+.cross-start{
+  align-items: flex-start;
+}
+.cross-end{
+  align-items: flex-end;
+}
+.cross-center{
+  align-items: center;
+}
+.cross-baseline{
+  align-items: baseline;
+}
+
+// 多根轴线的对齐方式
+.align-start{
+  align-content: flex-start;
+}
+.align-end{
+  align-content: flex-end;
+}
+.align-center{
+  align-content: center;
+}
+.align-stretch{
+  align-content: stretch;
+}
+.align-between{
+  align-content: space-between;
+}
+.align-around{
+  align-content: space-around;
+}
+
+
+
+//子元素空间
+.flex1{
+  flex: 1;
+}
+.flex2{
+  flex: 2;
+}
+
+// 自己对齐
+.self-start{
+  align-self: flex-start;
+}
+.self-end{
+  align-self: flex-end;
+}
+.self-center{
+  align-self: center;
+}
+.self-baseline{
+  align-self: baseline;
+}
+.self-stretch{
+  align-self: stretch;
+}
+
+//排序
+.order1{
+  order: 1;
+}
+.order-1{
+  order: -1;
+}
