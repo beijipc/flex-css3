@@ -1,10 +1,10 @@
-.container {
+.demo-container {
   height: 100px;
   background-color: gray;
   margin-bottom: 10px;
   overflow: hidden;
 }
-.box {
+.demo-box {
   height: 30px;
   width: 20%;
   color: white;

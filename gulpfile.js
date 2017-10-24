@@ -12,6 +12,7 @@ gulp.task('styles', function() {
     '> 1%',
     'last 7 versions',
     'Firefox ESR',
+    'iOS 7',
     'Opera 12.1'
   ];
   return gulp.src('src/**/*.less')
