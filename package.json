@@ -2,6 +2,10 @@
   "name": "flex-css3",
   "version": "1.0.1",
   "author": "jianglinghua",
+  "scripts":{
+    "start":"gulp watch",
+    "build":"gulp build"
+  },
   "description": "flex css3",
   "dependencies": {},
   "main": "./src/styles/main.less",
