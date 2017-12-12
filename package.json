@@ -1,6 +1,6 @@
 {
   "name": "flex-css3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "jianglinghua",
   "scripts":{
     "start":"gulp watch",
@@ -8,7 +8,7 @@
   },
   "description": "flex css3",
   "dependencies": {},
-  "main": "./src/styles/main.less",
+  "main": "./build/styles/main.css",
   "devDependencies": {
     "autoprefixer-core": "^3.1.1",
     "browser-sync": "^1.5.4",
