@@ -1,12 +1,12 @@
 {
-  "name": "flex-css3",
+  "name": "flex-layout-style",
   "version": "1.0.4",
   "author": "jianglinghua",
   "scripts": {
     "start": "gulp watch",
     "build": "gulp build"
   },
-  "description": "flex css3",
+  "description": "原flex css3, 更名为flex-layout-style。",
   "dependencies": {},
   "main": "./build/styles/main.css",
   "devDependencies": {
