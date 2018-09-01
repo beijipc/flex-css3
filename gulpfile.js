@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var cleanCSS = require('gulp-clean-css');
 var browserSync = require('browser-sync');
 
 // Load plugins
@@ -25,6 +26,7 @@ gulp.task('styles', function() {
           browsers: browsers
         })
       ]))
+    .pipe(cleanCSS())
     .pipe(gulp.dest('build'))
     .pipe(browserSync.reload({stream: true}));
 });
