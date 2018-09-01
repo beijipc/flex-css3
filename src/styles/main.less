@@ -23,6 +23,7 @@
 
 // 主轴方向
 .flex-row{
+  flex-direction: row;
 }
 .flex-row-reverse{
   flex-direction: row-reverse;
@@ -107,6 +108,14 @@
 }
 .flex2{
   flex: 2;
+}
+.flex-row > .flex1,
+.flex-row > .flex2{
+  width: 0;
+}
+.flex-column > .flex1,
+.flex-column > .flex2{
+  height: 0;
 }
 
 // 自己对齐

@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1 Hi flex!
+  h1 主轴方向
 
   h3 flex-row
   section.demo-container.flex-row
@@ -15,18 +15,38 @@ block content
     each val,index in boxs
       div.demo-box(style="background-color:#{val}")= index
 
-  h3 flex-row.main-center
-  section.demo-container.flex-row.main-center
+  h1 主轴对齐
+  h3 flex-row.main-around
+  section.demo-container.flex-row.main-around
     - var boxs = ['red','blue','yellowgreen','skyblue'];
     each val,index in boxs
       div.demo-box(style="background-color:#{val}")= index
 
+  h3 flex-row.main-between
+  section.demo-container.flex-row.main-between
+    - var boxs = ['red','blue'];
+    each val,index in boxs
+      div.demo-box(style="background-color:#{val}")= index
+  h3 flex-column.main-between
+  section.demo-container.flex-column.main-between
+    - var boxs = ['red','blue'];
+    each val,index in boxs
+      div.demo-box(style="background-color:#{val}")= index
+
+  h1 交叉轴对齐
   h3 flex-row.cross-center
   section.demo-container.flex-row.cross-center
     - var boxs = ['red','blue','yellowgreen','skyblue'];
     each val,index in boxs
       div.demo-box(style="background-color:#{val}")= index
+  
+  h3 flex-row.cross-end
+  section.demo-container.flex-row.cross-end
+    - var boxs = ['red','blue','yellowgreen','skyblue'];
+    each val,index in boxs
+      div.demo-box(style="background-color:#{val}")= index
 
+  h1 主轴和交叉轴同时使用
   h3 flex-row.main-center.cross-center
   section.demo-container.flex-row.main-center.cross-center
     - var boxs = ['red','blue'];
@@ -39,12 +59,30 @@ block content
     each val,index in boxs
       div.demo-box(style="background-color:#{val}")= index
 
-  h3 flex-column
-  section.demo-container.flex-column.main-between
-    div.demo-box
+  h1 子元素换行
 
-  h3 flex-wrap
+  h3 flex-row.flex-wrap
   section.demo-container.flex-row.flex-wrap
     - var boxs = ['red','blue','yellowgreen','skyblue','brown','crimson','indianred'];
     each val,index in boxs
       div.demo-box(style="background-color:#{val}")= index
+
+  h3 flex-row.flex-wrap-no
+  section.demo-container.flex-row.flex-wrap-no
+    - var boxs = ['red','blue','yellowgreen','skyblue','brown','crimson','indianred'];
+    each val,index in boxs
+      div.demo-box(style="background-color:#{val}")= index
+
+   h3 flex-column.flex-wrap
+  section.demo-container.flex-column.flex-wrap
+    - var boxs = ['red','blue','yellowgreen','skyblue','brown','crimson','indianred'];
+    each val,index in boxs
+      div.demo-box(style="background-color:#{val}")= index
+
+  h3 flex-column.flex-wrap-no
+  section.demo-container.flex-column.flex-wrap-no
+    - var boxs = ['red','blue','yellowgreen','skyblue','brown','crimson','indianred'];
+    each val,index in boxs
+      div.demo-box(style="background-color:#{val}")= index
+
+  h3 

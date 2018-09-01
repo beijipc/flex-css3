@@ -21,6 +21,13 @@
   display: -ms-flexbox;
   display: flex;
 }
+.flex-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
 .flex-row-reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -157,6 +164,14 @@
   -webkit-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+.flex-row > .flex1,
+.flex-row > .flex2 {
+  width: 0;
+}
+.flex-column > .flex1,
+.flex-column > .flex2 {
+  height: 0;
 }
 .self-start {
   -webkit-align-self: flex-start;

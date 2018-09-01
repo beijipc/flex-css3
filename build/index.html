@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </head>
   <body>
-    <h1>Hi flex!</h1>
+    <h1>主轴方向</h1>
     <h3>flex-row</h3>
     <section class="demo-container flex-row">
       <div style="background-color:red" class="demo-box">0</div>
@@ -28,13 +28,25 @@
       <div style="background-color:crimson" class="demo-box">5</div>
       <div style="background-color:indianred" class="demo-box">6</div>
     </section>
-    <h3>flex-row.main-center</h3>
-    <section class="demo-container flex-row main-center">
+    <h1>主轴对齐</h1>
+    <h3>flex-row.main-around</h3>
+    <section class="demo-container flex-row main-around">
       <div style="background-color:red" class="demo-box">0</div>
       <div style="background-color:blue" class="demo-box">1</div>
       <div style="background-color:yellowgreen" class="demo-box">2</div>
       <div style="background-color:skyblue" class="demo-box">3</div>
     </section>
+    <h3>flex-row.main-between</h3>
+    <section class="demo-container flex-row main-between">
+      <div style="background-color:red" class="demo-box">0</div>
+      <div style="background-color:blue" class="demo-box">1</div>
+    </section>
+    <h3>flex-column.main-between</h3>
+    <section class="demo-container flex-column main-between">
+      <div style="background-color:red" class="demo-box">0</div>
+      <div style="background-color:blue" class="demo-box">1</div>
+    </section>
+    <h1>交叉轴对齐</h1>
     <h3>flex-row.cross-center</h3>
     <section class="demo-container flex-row cross-center">
       <div style="background-color:red" class="demo-box">0</div>
@@ -42,6 +54,14 @@
       <div style="background-color:yellowgreen" class="demo-box">2</div>
       <div style="background-color:skyblue" class="demo-box">3</div>
     </section>
+    <h3>flex-row.cross-end</h3>
+    <section class="demo-container flex-row cross-end">
+      <div style="background-color:red" class="demo-box">0</div>
+      <div style="background-color:blue" class="demo-box">1</div>
+      <div style="background-color:yellowgreen" class="demo-box">2</div>
+      <div style="background-color:skyblue" class="demo-box">3</div>
+    </section>
+    <h1>主轴和交叉轴同时使用</h1>
     <h3>flex-row.main-center.cross-center</h3>
     <section class="demo-container flex-row main-center cross-center">
       <div style="background-color:red" class="demo-box">0</div>
@@ -52,11 +72,8 @@
       <div style="background-color:red" class="demo-box">0</div>
       <div style="background-color:blue" class="demo-box">1</div>
     </section>
-    <h3>flex-column</h3>
-    <section class="demo-container flex-column main-between">
-      <div class="demo-box"></div>
-    </section>
-    <h3>flex-wrap</h3>
+    <h1>子元素换行</h1>
+    <h3>flex-row.flex-wrap</h3>
     <section class="demo-container flex-row flex-wrap">
       <div style="background-color:red" class="demo-box">0</div>
       <div style="background-color:blue" class="demo-box">1</div>
@@ -66,5 +83,36 @@
       <div style="background-color:crimson" class="demo-box">5</div>
       <div style="background-color:indianred" class="demo-box">6</div>
     </section>
+    <h3>flex-row.flex-wrap-no</h3>
+    <section class="demo-container flex-row flex-wrap-no">
+      <div style="background-color:red" class="demo-box">0</div>
+      <div style="background-color:blue" class="demo-box">1</div>
+      <div style="background-color:yellowgreen" class="demo-box">2</div>
+      <div style="background-color:skyblue" class="demo-box">3</div>
+      <div style="background-color:brown" class="demo-box">4</div>
+      <div style="background-color:crimson" class="demo-box">5</div>
+      <div style="background-color:indianred" class="demo-box">6</div>
+    </section>
+    <h3>flex-column.flex-wrap</h3>
+    <section class="demo-container flex-column flex-wrap">
+      <div style="background-color:red" class="demo-box">0</div>
+      <div style="background-color:blue" class="demo-box">1</div>
+      <div style="background-color:yellowgreen" class="demo-box">2</div>
+      <div style="background-color:skyblue" class="demo-box">3</div>
+      <div style="background-color:brown" class="demo-box">4</div>
+      <div style="background-color:crimson" class="demo-box">5</div>
+      <div style="background-color:indianred" class="demo-box">6</div>
+    </section>
+    <h3>flex-column.flex-wrap-no</h3>
+    <section class="demo-container flex-column flex-wrap-no">
+      <div style="background-color:red" class="demo-box">0</div>
+      <div style="background-color:blue" class="demo-box">1</div>
+      <div style="background-color:yellowgreen" class="demo-box">2</div>
+      <div style="background-color:skyblue" class="demo-box">3</div>
+      <div style="background-color:brown" class="demo-box">4</div>
+      <div style="background-color:crimson" class="demo-box">5</div>
+      <div style="background-color:indianred" class="demo-box">6</div>
+    </section>
+    <h3> </h3>
   </body>
 </html>
